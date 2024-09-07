@@ -1,0 +1,50 @@
+{
+	"name": "@peresedov-tools/front-end",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@9.9.0",
+	"engines": {
+		"node": "22.8.0",
+		"pnpm": "9.9.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"test": "npm run test:integration && npm run test:unit",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"test:integration": "playwright test",
+		"test:unit": "vitest"
+	},
+	"dependencies": {
+		"@inlang/paraglide-sveltekit": "catalog:web",
+		"inter-ui": "catalog:web"
+	},
+	"devDependencies": {
+		"@playwright/test": "catalog:web",
+		"@sveltejs/adapter-node": "catalog:web",
+		"@sveltejs/kit": "catalog:web",
+		"@sveltejs/vite-plugin-svelte": "catalog:web",
+		"@types/eslint": "catalog:web",
+		"eslint": "catalog:web",
+		"eslint-config-prettier": "catalog:web",
+		"eslint-plugin-svelte": "catalog:web",
+		"globals": "catalog:web",
+		"prettier": "catalog:web",
+		"prettier-plugin-svelte": "catalog:web",
+		"svelte": "catalog:web",
+		"svelte-check": "catalog:web",
+		"typescript": "catalog:web",
+		"vite": "catalog:web",
+		"vitest": "catalog:web"
+	},
+	"dependenciesMeta": {
+		"inter-ui": {
+			"injected": true
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@peresedov-tools/site",
+  "version": "0.0.0",
+  "description": "Peresedov Tools",
+  "type": "module",
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "node": "22.8.0",
+    "pnpm": "9.9.0"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [],
+  "author": "Dmitry N. Medvedev <dmitry.medvedev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peresedov-tools/site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peresedov-tools/site/issues"
+  },
+  "devDependencies": {
+    "eslint": "catalog:web",
+    "eslint-config-airbnb-base": "catalog:web",
+    "eslint-plugin-import": "catalog:web",
+    "eslint-plugin-node": "catalog:web",
+    "globals": "catalog:web"
+  }
+}
