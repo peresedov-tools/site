@@ -9,8 +9,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
+  <style>
+    .main-div {
+      display: contents;
+      container-name: main-div;
+      container-type: inline-size;
+    }
+  </style>
 	<body data-sveltekit-preload-data="hover">
-    <div style="display: contents;">
+    <div class="main-div">
 		  %sveltekit.body%
     </div>
 	</body>

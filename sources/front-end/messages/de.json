@@ -1,3 +1,10 @@
 {
-    "$schema": "https://inlang.com/schema/inlang-message-format"
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "mainTitle": "Peresedov Werkzeug",
+    "navTools": "Werkzeug",
+    "navAccessories": "Zubehör",
+    "navKnowledgeBase": "WB",
+    "navForum": "Forum",
+    "navAccount": "Konto",
+    "navBasket": "Warenkorb"
 }

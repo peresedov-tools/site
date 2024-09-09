@@ -30,6 +30,8 @@
   --box-shadow-blur-radius: 2px;
   --box-shadow-spread-radius: 0px;
 
+  --a-color: var(--theme-darkest_white);
+
   box-sizing: border-box;
   text-overflow: ellipsis;
 }
@@ -89,6 +91,9 @@ html {
 }
 
 body {
+  container-name: body;
+  container-type: inline-size;
+
   color: var(--main-color);
   background-color: var(--main-background-color);
 
@@ -208,4 +213,22 @@ label {
 label[for],
 button {
   cursor: pointer;
+}
+
+a, a:visited, a:active {
+  color: var(--a-color);
+  text-decoration: none;
+}
+
+select {
+  appearance: none;
+  background-color: var(--main-background-color);
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+
+  & > option[selected] {
+    appearance: none;
+    background-color: red;
+  }
 }
