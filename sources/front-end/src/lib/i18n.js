@@ -13,7 +13,9 @@ const toURL = (path = null) => {
   return path;
 };
 
-export const i18n = createI18n(runtime);
+export const i18n = createI18n(runtime, {
+  prefixDefaultLanguage: 'never',
+});
 // export const i18n = createI18n(runtime, {
 //   pathnames: {
 //     '/accessories': toURL(m.navAccessories()),

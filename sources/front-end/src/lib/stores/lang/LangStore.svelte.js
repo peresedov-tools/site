@@ -9,6 +9,12 @@ class LangStore {
   #languageTag = $state(languageTag());
 
   #setLanguageTag(tag = null) {
+    console.debug('setLanguageTag', tag, tag === null, tag === languageTag());
+
+    if (tag === null) {
+      return;
+    }
+
     this.#languageTag = tag;
   }
 
